@@ -6,9 +6,7 @@ function AddPlace(){
     async function createPlaceHandler(place){
         console.log(`place=${place}`);
         await insertPlace(place);
-        navigation.navigate('AllPlaces', {
-            place: place
-        });
+        navigation.navigate('AllPlaces');
     }
 
     return (            
